@@ -1,0 +1,10 @@
+#PBS -N jobbatch
+#PBS -l walltime=5:00:00 
+#PBS -l nodes=1:ppn=1 
+#PBS -A PAS1785
+#PBS -j oe 
+module load julia/1.1.1
+cd $TMPDIR 
+cp $PBS_O_WORKDIR/RunTuolumne.sh ./ 
+cp $PBS_O_WORKDIR/BlenderAlgorithm_v5.0.jl ./ 
+sh RunTuolomne.sh 1 # where 1 is the start number for RunTuolumne.sh
