@@ -1,0 +1,12 @@
+## sample loop to construct Blender Grid
+## Written in pseudo code based on matlab, adapt to your preferred language.
+
+gridData = readmatrix('BlenderGridData.csv');
+sampleData = readmatrix('samplePlotData.csv');
+npix = length(gridData.Lat);
+
+for k = 1 : npix
+  LatGrid(iMap(k),jMap(k)) = Lat(k);
+  LonGrid(iMap(k),jMap(k)) = Lon(k);
+  samplePlotGrid(iMap(k),jMap(k)) = sampleData(k);
+end
