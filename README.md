@@ -20,4 +20,6 @@ see this line from [RunTuolumne.sh]:
 
   /apps/julia/1.1.1/bin/julia Blender_Algorithm_v5.0.jl . >log.txt
 
-Further documentation may be added at a future date # -JLD 08/26/25
+Data for this algorithm available at https://zenodo.org/records/17093963
+
+Further documentation may be added at a future date # -JLD 09/10/25
